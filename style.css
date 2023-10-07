@@ -246,8 +246,137 @@ li {
     .vasanth-title{
       display: none;
     }
+    /* befor after code  */
+    .lapview{
+      position: relative;
+      /* max-width: 500px; */
+      /* margin: 100px auto; */
+      text-align: center;
+      color: azure;
+     
+    }
+    .lapview::before{
+      content:" ";
+      height: 2px;
+      width: 130px;
+      background: red;
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 32%;
+    }
+    .lapview::after{
+      content:" ";
+      height: 2px;
+      width: 130px;
+      background: red;
+      display: block;
+      position: absolute;
+      top: 50%;
+      right: 32%;
+    }
+    .projects{
+      position: relative;
+      /* max-width: 500px; */
+      /* margin: 100px auto; */
+      text-align: center;
+      color: azure;
+     
+    }
+    .projects::before{
+      content:" ";
+      height: 2px;
+      width: 130px;
+      background: red;
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 30%;
+    }
+    .projects::after{
+      content:" ";
+      height: 2px;
+      width: 130px;
+      background: red;
+      display: block;
+      position: absolute;
+      top: 50%;
+      right: 30%;
+    }
+    .ser{
+      position: relative;
+      /* max-width: 500px; */
+      /* margin: 100px auto; */
+      text-align: center;
+      color: azure;
+     
+    }
+    .ser::before{
+      content:" ";
+      height: 2px;
+      width: 130px;
+      background: red;
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 30%;
+    }
+    .ser::after{
+      content:" ";
+      height: 2px;
+      width: 130px;
+      background: red;
+      display: block;
+      position: absolute;
+      top: 50%;
+      right: 30%;
+    }
+    .mobileview{
+      display: none;
+    }
+    
+    /* end */
 
     @media only screen and (max-width: 768px){
+      .mobileview{
+        display: block;
+      }
+      .ser{
+        display: none;
+      }
+      .projects{
+        display: none;
+      }
+      .lapview{
+        display: none;
+      }
+      .mobileview{
+        position: relative;
+        /* max-width: 500px; */
+        /* margin: 100px auto; */
+        text-align: center;
+        color: azure;
+      }
+      .mobileview::before{
+        content:" ";
+        height: 2px;
+        width: 130px;
+        background: red;
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 0;
+      }
+      .mobileview::after{
+        content:" ";
+        height: 2px;
+        width: 130px;
+        background: red;
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: 0;
+      }
       .vasimg{
         display: none;
       }
@@ -263,5 +392,14 @@ li {
         padding-bottom: 0px;
         margin-top: 0px !important;
         padding: 25px;
+      }
+      .aboutmt{
+        margin-top: 150px !important;
+        padding-left: 40px !important;
+        padding-right: 40px !important;
+      }
+      .three-box{
+        margin-top: 15px;
+        margin-bottom: 15px;
       }
     } 
